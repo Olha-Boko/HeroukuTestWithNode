@@ -1,14 +1,22 @@
-const http = require('http');
+const express = require('express');
+// Heroku assigns a port when it via the process (environmenr variables)
+//localy this will run @ port 3000; remotaly it'll run werever heroku tells it to run
+const port = process.env.PORT || 3000; // the || means "or"
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const app =express();
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World, we are live with Node\n');
-});
+app.get('/', (req, res) => {
+  res.send('hello world! here!');
+})
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.get('/contact', (req, res) => {
+  res.send('on the contact page! here!');
+})
+
+app.get('/portfolio', (req, res) => {
+  res.send('on the portfolio page! here!');
+})
+
+app.listen(port, () => {
+  console.log(`Server running at ${port}`);
 });
