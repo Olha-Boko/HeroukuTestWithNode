@@ -7,6 +7,8 @@ const port = process.env.PORT || 3000; // the || means "or"
 
 const app =express();
 
+app.use(express.static('public'));
+
 //a forvard slash is the home route (same as index.html)
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/views/index.html'));
