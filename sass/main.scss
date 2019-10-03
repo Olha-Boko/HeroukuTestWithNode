@@ -1,4 +1,128 @@
 @import "_vars.scss";
 
-body { background-color: $color-blue; }
+body { background-color: white; }
+
 .hidden { display: none; }
+
+img, embed, object, video {
+    max-width: 100%; }
+
+.top-bg {
+    // width: 100%;
+    height: 707px;
+    background: url(../public/images/bg_top_tablet.jpg);
+    // background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.logo {
+    width: 250px;
+}
+.top-logo{
+    justify-content: center;
+    margin: 0 auto;  
+}
+.info-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        font-family: "Oswald";
+        font-size: 72px;
+        color: $color-orange;
+        text-align: center;
+
+        .blue-text {
+            color: $color-blue; 
+        }
+    }
+
+    .info-text {
+        font-family: $paragraph-font;
+        font-size: 24px;
+        color: $color-blue;
+        text-align: center;
+        margin-top: 70px;
+
+        p{
+            padding: 0 50px 0 50px;
+        }
+    }
+}
+
+.button-con {
+    margin: 100px auto;
+    // height: 150px;
+    width: 90%;
+    display: flex;
+    // flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+        .button {
+            text-decoration: none;
+            font-family: "Oswald";
+            display: block;
+            color: white;
+            border-radius: 50%;
+            width: 150px;
+            // height: 150px;
+            background-color: $color-orange;
+            text-align: center;
+            font-size: 32px;
+            padding-top: 59px;
+            padding-bottom: 59px;
+            margin: 10px;
+
+        }
+    
+}
+.dot {
+    width: 70px; 
+    height: 70px;
+    background-color: $color-orange;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+
+.text-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h3 {
+        font-family: "Oswald";
+        font-size: 48px;
+        color: $color-orange;
+        text-align: center;
+        // margin-bottom: 70px;
+    }
+
+    .text-con{
+        font-family: $paragraph-font;
+        font-size: 24px;
+        color: $color-blue;
+        text-align: center;
+        margin-top: 70px;
+
+        p{
+           margin: 0 50px 70px 50px;  
+        }
+    }
+}
+
+.img-about {
+    // margin: 0 auto;
+    text-align: center;
+
+    .shoe{
+        height: 500px;
+    }
+}
