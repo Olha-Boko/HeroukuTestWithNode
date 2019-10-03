@@ -5,7 +5,7 @@ const path = require('path'); //path lets as navigate to the file sistem/folder
 //localy this will run @ port 3000; remotaly it'll run werever heroku tells it to run
 const port = process.env.PORT || 3000; // the || means "or"
 
-const app =express();
+const app = express();
 
 app.use(express.static('public'));
 
