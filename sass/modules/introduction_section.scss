@@ -1,0 +1,72 @@
+.info-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        font-family: "Oswald";
+        font-size: 72px;
+        color: $color-orange;
+        text-align: center;
+
+        .blue-text {
+            color: $color-blue; 
+        }
+    }
+
+    .info-text {
+        font-family: $paragraph-font;
+        font-size: 18px;
+        color: $color-blue;
+        text-align: center;
+        margin-top: 70px;
+
+        p{
+            padding: 0 50px 0 50px;
+        }
+    }
+}
+.but-con{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-con {
+
+    // height: 150px;
+    display: flex;
+    // flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // flex-wrap: nowrap;
+
+        .button {
+            text-decoration: none;
+            font-family: "Oswald";
+            display: block;
+            color: white;
+            border-radius: 50%;
+            width: 150px;
+            // height: 150px;
+            background-color: $color-orange;
+            text-align: center;
+            font-size: 32px;
+            padding-top: 59px;
+            padding-bottom: 59px;
+            margin: 10px;
+
+        }
+    
+}
+.dot {
+    display: none;
+    width: 70px; 
+    height: 70px;
+    background-color: $color-orange;
+    border-radius: 50%;
+    margin: 10px;
+
+}
