@@ -15,13 +15,13 @@ app.get('/', (req, res) => {
   //this builds localhost:3000/views/index.html
 })
 
-app.get('/contact', (req, res) => {
-  res.sendFile(path.join(__dirname + '/views/contact.html'));
-})
+// app.get('/contact', (req, res) => {
+//   res.sendFile(path.join(__dirname + '/views/contact.html'));
+// })
 
-app.get('/portfolio', (req, res) => {
-  res.send('on the portfolio page! here!');
-})
+// app.get('/portfolio', (req, res) => {
+//   res.send('on the portfolio page! here!');
+// })
 
 app.listen(port, () => {
   console.log(`Server running at ${port}`);
