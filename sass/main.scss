@@ -1,4 +1,6 @@
 @import "_vars.scss";
+@import 'modules/about_section.scss';
+@import 'modules/introduction_section.scss'; 
 
 // mobile version
 
@@ -28,113 +30,8 @@ img, embed, object, video {
     justify-content: center;
     margin: 0 auto;  
 }
-.info-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    h2{
-        font-family: "Oswald";
-        font-size: 72px;
-        color: $color-orange;
-        text-align: center;
 
-        .blue-text {
-            color: $color-blue; 
-        }
-    }
-
-    .info-text {
-        font-family: $paragraph-font;
-        font-size: 18px;
-        color: $color-blue;
-        text-align: center;
-        margin-top: 70px;
-
-        p{
-            padding: 0 50px 0 50px;
-        }
-    }
-}
-.but-con{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 90%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.button-con {
-
-    // height: 150px;
-    display: flex;
-    // flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    // flex-wrap: nowrap;
-
-        .button {
-            text-decoration: none;
-            font-family: "Oswald";
-            display: block;
-            color: white;
-            border-radius: 50%;
-            width: 150px;
-            // height: 150px;
-            background-color: $color-orange;
-            text-align: center;
-            font-size: 32px;
-            padding-top: 59px;
-            padding-bottom: 59px;
-            margin: 10px;
-
-        }
-    
-}
-.dot {
-    display: none;
-    width: 70px; 
-    height: 70px;
-    background-color: $color-orange;
-    border-radius: 50%;
-    margin: 10px;
-
-}
-
-.text-about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    h3 {
-        font-family: "Oswald";
-        font-size: 48px;
-        color: $color-orange;
-        text-align: center;
-        // margin-bottom: 70px;
-    }
-
-    .text-con{
-        font-family: $paragraph-font;
-        font-size: 18px;
-        color: $color-blue;
-        text-align: center;
-        margin-top: 70px;
-
-        p{
-           margin: 0 50px 70px 50px;  
-        }
-    }
-}
-
-.img-about {
-    // margin: 0 auto;
-    text-align: center;
-
-    .shoe{
-        height: 500px;
-    }
-}
 .container-footer {
     height: 1005px;
     background: url(../images/bg_bottom_mobail.png);
@@ -169,7 +66,10 @@ img, embed, object, video {
 .social-icon{
     width: 70px;
 }
+
+
 // tablet version
+
 @media screen and (min-width: 440px){
     .dot{ 
         display: block;
@@ -222,6 +122,9 @@ img, embed, object, video {
     margin-right: 0px;
    }
 }
+
+// descktop version
+
 @media screen and (min-width: 1200px){
     .top-logo{
         margin-left: 130px;
